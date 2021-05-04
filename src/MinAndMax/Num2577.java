@@ -11,7 +11,7 @@ public class Num2577 {
 		int number = 0;
 		int[] count = {0,0,0,0,0,0,0,0,0,0};
 		
-		//¼ıÀÚ 3°³ input
+		//Â¼Ã½Ã€Ãš 3Â°Â³ input
 		for(int i=0; i<input.length; i++) {
 			input[i] = sc.nextInt();
 		}
@@ -22,7 +22,6 @@ public class Num2577 {
 		String[] numArr = temp.split("");
 		
 		for(int i=0; i<numArr.length; i++) {
-			for(int j=0; j<=9; j++) {
 				switch(Integer.parseInt(numArr[i])) {
 					case 0:
 						count[0]++;
@@ -55,7 +54,7 @@ public class Num2577 {
 						count[9]++;
 						break;
 				}
-			}
+			
 		}
 		
 		for(int i=0; i<count.length; i++) {
