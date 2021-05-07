@@ -21,7 +21,7 @@ public class Num1546{
          }
       }
       
-      for(int i=0; i<totalExamNum; i++{
+      for(int i=0; i<totalExamNum; i++){
          score[i] = score[i]/max*100;
          sum = sum + score[i];
       }
