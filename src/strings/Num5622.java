@@ -8,14 +8,15 @@ public class Num5622 {
 		Scanner sc = new Scanner(System.in);
 		
 		String input = sc.nextLine();
-		String[] temp = {"","","ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"};
+		//(j+1)String[] temp = {"","","ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"};
+		String[] temp = {"ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"};
 		String[] charInput = input.split("");
 		int count = 0;
 		
 		for(int i=0; i<charInput.length; i++) {
 			for(int j=0; j<temp.length; j++) {
 				if(temp[j].contains(charInput[i])) {
-					count = count + (j+1);
+					count = count + (j+3);
 				}
 			}
 		}
