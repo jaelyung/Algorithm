@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Num1157 {
 
 	public static void main(String[] args) throws IOException {
-		//��� 1. �޸� �ʰ�
+		//¹æ¹ý 1. ¸Þ¸ð¸® ÃÊ°ú
 		/*
 		Scanner sc = new Scanner(System.in);
 		
@@ -45,7 +45,7 @@ public class Num1157 {
 		System.out.println(maxLetter);
 		*/
 		
-		//���2
+		//¹æ¹ý2
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
@@ -76,4 +76,4 @@ public class Num1157 {
 		
 	}
 
-}
+} 
