@@ -11,18 +11,14 @@ public class Num1712 {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
-		int count = 1;
+				
+		if(c<=b) {
+			System.out.println(-1);
+		}else {
+			System.out.println((a/(c-b))+1);
+		}
 		
-		//c*1 c*2 c*3 ...
-		//a+b a+2b a+3b a+4b
-		//(a+b) < (c*1)
 		
-//		do {
-//			++count;
-//		}while(a+(count*b) > (c*count));
-//		
-//		System.out.println(count);
-
 	}
 
 }
