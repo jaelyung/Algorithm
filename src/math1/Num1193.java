@@ -1,24 +1,30 @@
 package math1;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Num1193 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
 		
-		int n = sc.nextInt();
-
-		int cross_count = 1, prev_count_sum = 0;
+		int line = 0;
+		int cnt =0;
+		while(cnt < n) {
+			line++;
+			cnt = line * (line+1) / 2;
+		}
 		
-		while(true) {
-			
-			if(n <= prev_count_sum + cross_count) {
-				
-				if(cross_count % 2 == 1) {
-					System.out.println((cross_count - (n - prev_count_sum -1)) + "/");
-				}
-			}
+		if(line % 2 != 0) {
+			int top = 1+(cnt-n);
+			int bottom = line - (cnt-n);
+			System.out.println(top + "/" + bottom);
+		}else {
+			int top =line - (cnt -n);
+			int bottom = 1 + (cnt-n);
+			System.out.println(top+"/"+bottom);
 		}
 		
 		
